@@ -17,9 +17,9 @@ notification("Void", content, "rbxassetid://10198709880", 5)
 
 local Window = OrionLib:MakeWindow({Name = "Void | " .. GameName, HidePremium = false, IntroText = "Void Scripts", SaveConfig = true, ConfigFolder = "Void"})
 local Home = Window:MakeTab({Name = "Notice", Icon = "rbxassetid://7072978559", PremiumOnly = false})
-Home1:AddParagraph("Notice","Click anti-afk to prevent yourself from going idle ingame.")
+Home:AddParagraph("Notice","Click anti-afk to prevent yourself from going idle ingame.")
 
-Home1:AddButton({Name = "Anti-Afk!",Callback = function()
+Home:AddButton({Name = "Anti-Afk!",Callback = function()
     
        notification("Void", "Anti-AFK has now been enabled.", "rbxassetid://10198709880", 3)
         game:service "Players".LocalPlayer.Idled:connect(
