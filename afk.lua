@@ -21,8 +21,6 @@ Home:AddParagraph("Notice","Click anti-afk to prevent yourself from going idle i
 
 Home:AddButton({Name = "Anti-Afk!",Callback = function()
     
-       notification("Void", "Anti-AFK has now been enabled.", "rbxassetid://10198709880", 3)
-            OrionLib:Destroy()
         game:service "Players".LocalPlayer.Idled:connect(
                 function()
                     game:service "VirtualUser":CaptureController()
@@ -30,6 +28,9 @@ Home:AddButton({Name = "Anti-Afk!",Callback = function()
                 end
             )
         end
+                    OrionLib:Destroy()
+       notification("Void", "Anti-AFK has now been enabled.", "rbxassetid://10198709880", 3)
+
     }
 )
 
