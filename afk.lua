@@ -16,8 +16,7 @@ end
 notification("Void", content, "rbxassetid://10198709880", 5)
 
 local Window = OrionLib:MakeWindow({Name = "Void | " .. GameName, HidePremium = false, IntroText = "Void Scripts", SaveConfig = true, ConfigFolder = "Void"})
-local Home = Window:MakeTab({Name = "Home", Icon = "rbxassetid://7072717697", PremiumOnly = false})
-local Home1 = Window1:MakeTab({Name = "Warning", Icon = "rbxassetid://7072978559", PremiumOnly = false});
+local Home = Window:MakeTab({Name = "Notice", Icon = "rbxassetid://7072978559", PremiumOnly = false})
 Home1:AddParagraph("Notice","Click anti-afk to prevent yourself from going idle ingame.")
 
 Home1:AddButton({Name = "Anti-Afk!",Callback = function()
