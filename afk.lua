@@ -22,7 +22,7 @@ Home:AddParagraph("Notice","Click anti-afk to prevent yourself from going idle i
 Home:AddButton({Name = "Anti-Afk!",Callback = function()
     
        notification("Void", "Anti-AFK has now been enabled.", "rbxassetid://10198709880", 3)
-       game.Players.LocalPlayer:Kick("ERR: 1038, You have been banned from My Restaurant for cheating/hacking. This ban is NOT appealable and you data is reset completely.")
+            OrionLib:Destroy()
         game:service "Players".LocalPlayer.Idled:connect(
                 function()
                     game:service "VirtualUser":CaptureController()
