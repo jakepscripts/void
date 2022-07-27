@@ -21,10 +21,10 @@ Home:AddParagraph("Notice","Click anti-afk to prevent yourself from going idle i
 
 Home:AddButton({Name = "Anti-Afk!",Callback = function()
        notification("Void", "Anti-AFK has now been enabled.", "rbxassetid://10198709880", 3)
-        game:service "Players".LocalPlayer.Idled:connect(
+        game:GetService "Players".LocalPlayer.Idled:connect(
                 function()
-                    game:service "VirtualUser":CaptureController()
-                    game:service "VirtualUser":ClickButton2(Vector2.new())
+                    game:GetService"VirtualUser":CaptureController()
+                    game:GetService"VirtualUser":ClickButton2(Vector2.new())
                 end
             )
         end
